@@ -1,11 +1,17 @@
-dependencies:
-  - name: datadog-crds
-    version: 1.0.1
-    repository: https://helm.datadoghq.com
-    condition: clusterAgent.metricsProvider.useDatadogMetrics
-    tags:
-    - install-crds
-  - name: kube-state-metrics
-    version: 2.13.2
-    repository: https://prometheus-community.github.io/helm-charts
-    condition: datadog.kubeStateMetricsEnabled
+apiVersion: v1
+name: datadog
+version: 3.58.0
+appVersion: "7"
+description: Datadog Agent
+keywords:
+  - monitoring
+  - alerting
+  - metric
+home: https://www.datadoghq.com
+icon: https://datadog-live.imgix.net/img/dd_logo_70x75.png
+sources:
+  - https://app.datadoghq.com/account/settings#agent/kubernetes
+  - https://github.com/DataDog/datadog-agent
+maintainers:
+  - name: Datadog
+    email: support@datadoghq.com
