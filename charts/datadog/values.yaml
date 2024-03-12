@@ -32,7 +32,7 @@ datadog:
   # datadog.apiKey -- Your Datadog API key
 
   ## ref: https://app.datadoghq.com/account/settings#agent/kubernetes
-  apiKey:  test
+  apiKey:
 
   # datadog.apiKeyExistingSecret -- Use existing Secret which stores API key instead of creating a new one. The value should be set with the `api-key` key inside the secret.
 
@@ -880,7 +880,7 @@ datadog:
 ## ref: https://docs.datadoghq.com/agent/kubernetes/cluster/
 clusterAgent:
   # clusterAgent.enabled -- Set this to false to disable Datadog Cluster Agent
-  enabled: true
+  enabled: false
 
   # clusterAgent.shareProcessNamespace -- Set the process namespace sharing on the Datadog Cluster Agent
   shareProcessNamespace: false
