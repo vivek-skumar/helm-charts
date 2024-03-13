@@ -435,7 +435,7 @@ datadog:
     # datadog.apm.socketEnabled -- Enable APM over Socket (Unix Socket or windows named pipe)
 
     ## ref: https://docs.datadoghq.com/agent/kubernetes/apm/
-    socketEnabled: true
+    socketEnabled: false
 
     # datadog.apm.portEnabled -- Enable APM over TCP communication (hostPort 8126 by default)
 
